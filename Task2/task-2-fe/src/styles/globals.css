@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* MUI CUSTOMIZE */
+
+.MuiFormControl-root {
+  max-width: 500px;
+  border: 1px solid #ebedf0;
+  padding: 25px 15px 10px 10px;
+  border-radius: 10px;
+}
+
+.MuiButtonBase-root:hover {
+  transition: 200ms;
+  /* background: none; */
+}
+
+.MuiFormLabel-root {
+  display: flex;
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #a6a6a6 !important;
+}
+
+.MuiInputBase-root {
+  margin: 0 !important;
+}
+
+.MuiInputBase-input {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.MuiOutlinedInput-root {
+  width: 100%;
+}
+
+.MuiSelect-icon {
+  top: -10px;
+}
