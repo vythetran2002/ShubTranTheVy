@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Cài đặt để biên dịch sang ES6
+    "module": "commonjs", // Sử dụng CommonJS cho Node.js
+    "outDir": "./build", // Đường dẫn thư mục đầu ra
+    "rootDir": "./", // Thư mục nguồn
+    "strict": true, // Bật chế độ nghiêm ngặt
+    "esModuleInterop": true // Hỗ trợ import ES6
+  },
+  "include": [
+    "server.ts" // Bao gồm file server.ts
+  ]
+}
